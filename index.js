@@ -6,18 +6,17 @@ require('dotenv').config({
 
 const log = require('./lib/logger').child({ module: 'main' })
 const mongo = require('./lib/mongo')
-const Promise = require('bluebird')
 const workerServer = require('./lib/worker')
 
-return Promise.join(
-  workerServer.start(),
-  mongo.connect()
-)
+return mongo.connect()
+  .then(workerServer.start)
   .then(() => {
     log.info('all components started')
   })
   .catch((error) => {
     log.fatal({ error }, 'Clio failed to start')
     mongo.close()
-    process.exit(1)
+      .finally(() => {
+        process.exit(1)
+      })
   })
