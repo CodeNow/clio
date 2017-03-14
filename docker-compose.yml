@@ -12,7 +12,7 @@ services:
       - RABBITMQ_USERNAME=guest
       - RABBITMQ_PASSWORD=guest
       - RABBITMQ_HOSTNAME=rabbit
-      - MONGO=mongodb://localhost:27017/runnable_test
+      - MONGO=mongodb://mongo:27017/runnable_test
 
   rabbit:
     image: rabbitmq:3.4.3-management
