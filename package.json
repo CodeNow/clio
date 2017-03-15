@@ -4,7 +4,7 @@
   "description": "Clio the goddess of history, in charge of container history and logs",
   "main": "index.js",
   "scripts": {
-    "test": "APP_NAME=clio mocha test/* --async-only",
+    "test": "mocha test/* --async-only",
     "start": "node index.js"
   },
   "repository": {

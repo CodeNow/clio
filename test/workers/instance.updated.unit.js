@@ -1,5 +1,7 @@
 'use strict'
 
+require('dotenv').config({ path: './config/.env' })
+
 const _ = require('lodash')
 const expect = require('chai').expect
 const instanceUpdatedMock = require('../mocks/instance.updated/exitedCodeZero.json')
