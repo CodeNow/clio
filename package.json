@@ -1,6 +1,6 @@
 {
   "name": "clio",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Clio the goddess of history, in charge of container history and logs",
   "main": "index.js",
   "scripts": {
