@@ -1,4 +1,4 @@
-FROM node:6.10.0
+FROM node:4.8.0
 
 ADD ./package.json /app/package.json
 WORKDIR /app

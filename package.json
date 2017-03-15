@@ -16,8 +16,8 @@
     "url": "https://github.com/CodeNow/clio/issues"
   },
   "engines": {
-    "node": ">=6.10.0",
-    "npm": ">=3.10.10"
+    "node": ">=4.8.0",
+    "npm": ">=2.15.11"
   },
   "license": "UNLICENSED",
   "homepage": "https://github.com/CodeNow/clio#readme",
