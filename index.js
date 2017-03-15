@@ -1,8 +1,6 @@
 'use strict'
 
-require('dotenv').config({
-  path: './config/.env'
-})
+require('dotenv').config({ path: './config/.env' })
 
 const log = require('./lib/logger').child({ module: 'main' })
 const mongo = require('./lib/mongo')
