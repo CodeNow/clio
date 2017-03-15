@@ -44,21 +44,6 @@ describe('instance.updated', () => {
       })
     })
 
-    describe('when instance is missing build', () => {
-      beforeEach(() => {
-        delete taskParams.instance.contextVersion.build
-      })
-      it('should throw a worker stop error', () => {
-        return instanceUpdatedWorker.task(taskParams)
-          .then(() => {
-            throw new Error('This should not happen')
-          })
-          .catch((err) => {
-            expect(err).to.be.instanceof(WorkerStopError)
-            expect(err.message).to.equal('Instance does not have a build')
-          })
-      })
-    })
     describe('when instance has no main repo', () => {
       beforeEach(() => {
         taskParams.instance.contextVersion.appCodeVersions = [{
