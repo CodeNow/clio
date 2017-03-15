@@ -1,0 +1,3 @@
+exchanges:
+    instance.updated@/:
+        type: fanout

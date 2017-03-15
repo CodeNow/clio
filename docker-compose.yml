@@ -1,0 +1,31 @@
+version: '3'
+services:
+  clio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    links:
+      - 'rabbit'
+      - 'mongo'
+    environment:
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USERNAME=guest
+      - RABBITMQ_PASSWORD=guest
+      - RABBITMQ_HOSTNAME=rabbit
+      - MONGO=mongodb://mongo:27017/runnable_test
+
+  rabbit:
+    image: rabbitmq:3.4.3-management
+    ports:
+      - "15672:15672"
+
+  mongo:
+    image: mongo:3.2
+
+  rabbitpuppy:
+    image: meltwater/rabbit-puppy:latest
+    links:
+        - rabbit
+    volumes:
+        - ./config:/config
+    command: apply -b http://rabbit:15672/ -u guest -p guest -c /config/rabbit-config.yaml -w 60

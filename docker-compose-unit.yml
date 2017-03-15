@@ -1,0 +1,7 @@
+version: '3'
+services:
+  clio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: npm test

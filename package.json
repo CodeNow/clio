@@ -1,0 +1,41 @@
+{
+  "name": "clio",
+  "version": "0.0.1",
+  "description": "Clio the goddess of history, in charge of container history and logs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/* --async-only",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeNow/clio.git"
+  },
+  "author": "Ryan Kahn <kahn@runnable.com>",
+  "bugs": {
+    "url": "https://github.com/CodeNow/clio/issues"
+  },
+  "engines": {
+    "node": ">=4.8.0",
+    "npm": ">=2.15.11"
+  },
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/CodeNow/clio#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "bunyan": "^1.8.8",
+    "continuation-local-storage": "^3.2.0",
+    "dotenv": "^4.0.0",
+    "error-cat": "^3.0.0",
+    "joi": "^10.2.2",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.24",
+    "ponos": "^5.8.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7",
+    "sinon-as-promised": "^4.0.2"
+  }
+}

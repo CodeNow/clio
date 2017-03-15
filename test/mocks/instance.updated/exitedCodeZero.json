@@ -1,0 +1,387 @@
+{
+  "instance": {
+    "_id": "58950fb4bf4f611600a0373f",
+    "build": {
+      "buildNumber": 708230,
+      "contexts": [
+        "58950f7f9dd12517008e7d18"
+      ],
+      "contextVersions": [
+        "58c86e1119a9081300126632"
+      ],
+      "created": "2017-03-14T22:26:25.708Z",
+      "started": "2017-03-14T22:26:25.777Z",
+      "completed": "2017-03-14T22:28:22.170Z",
+      "createdBy": {
+        "github": 7440805
+      },
+      "owner": {
+        "github": 2335750
+      },
+      "failed": false,
+      "_id": "58c86e1119a908130012663a",
+      "__v": 0,
+      "duration": 116393,
+      "successful": true,
+      "id": "58c86e1119a908130012663a"
+    },
+    "ipWhitelist": {
+      "enabled": false
+    },
+    "isTesting": true,
+    "name": "angular-tests",
+    "owner": {
+      "github": 2335750,
+      "gravatar": "https://avatars.githubusercontent.com/u/2335750?v=3",
+      "username": "CodeNow"
+    },
+    "testingParentId": "58950d5df1dd3a1600f4ea7d",
+    "contextVersion": {
+      "id": "58c86e1119a9081300126632",
+      "isBuildSuccessful": true,
+      "created": "2017-03-14T22:26:25.612Z",
+      "dockRemoved": false,
+      "appCodeVersions": [
+        {
+          "transformRules": {
+            "exclude": [],
+            "replace": [],
+            "rename": []
+          },
+          "useLatest": false,
+          "commit": "b29666337b50119be97d8ba26f53406ba67a38a6",
+          "lowerBranch": "master",
+          "branch": "master",
+          "lowerRepo": "codenow/runnable-angular",
+          "repo": "CodeNow/runnable-angular",
+          "_id": "58950f82db280516004b4b96",
+          "privateKey": "CodeNow/runnable-angular.key",
+          "publicKey": "CodeNow/runnable-angular.key.pub",
+          "defaultBranch": "master"
+        }
+      ],
+      "advanced": true,
+      "build": {
+        "duration": 116294,
+        "_id": "58c86e1119a9081300126631",
+        "triggeredAction": {
+          "appCodeVersion": {
+            "commitLog": [
+              {
+                "modified": [
+                  "client/templates/instances/viewInstancesList.jade"
+                ],
+                "removed": [],
+                "added": [],
+                "committer": {
+                  "username": "taylordolan",
+                  "email": "taylordolan@me.com",
+                  "name": "Taylor Dolan"
+                },
+                "author": {
+                  "username": "taylordolan",
+                  "email": "taylordolan@me.com",
+                  "name": "Taylor Dolan"
+                },
+                "url": "https://github.com/CodeNow/runnable-angular/commit/b29666337b50119be97d8ba26f53406ba67a38a6",
+                "timestamp": "2017-03-14T15:26:16-07:00",
+                "message": "fix margin below service CTA",
+                "distinct": true,
+                "tree_id": "c6de648badc7231113ddc3db3827a61ebfd95095",
+                "id": "b29666337b50119be97d8ba26f53406ba67a38a6"
+              }
+            ],
+            "repo": "CodeNow/runnable-angular",
+            "branch": "master",
+            "commit": "b29666337b50119be97d8ba26f53406ba67a38a6"
+          },
+          "manual": false
+        },
+        "failed": false,
+        "completed": "2017-03-14T22:28:22.147Z",
+        "containerStarted": "2017-03-14T22:26:28.675Z",
+        "dockerTag": "localhost/2335750/58950f7f9dd12517008e7d18:58c86e1119a9081300126632",
+        "dockerContainer": "d93776c7007b8f62d0ab519e3f15941640bceb74e32885181cabab03a1d27a2a",
+        "hash": "ce81c54e573d086f43d1eb53e500c7cc",
+        "started": "2017-03-14T22:26:25.853Z",
+        "triggeredBy": {
+          "github": 7440805
+        },
+        "message": "autodeploy"
+      },
+      "dockerHost": "http://10.8.195.90:4242",
+      "state": "build_succeeded",
+      "__v": 0,
+      "owner": {
+        "github": 2335750
+      },
+      "context": "58950f7f9dd12517008e7d18",
+      "buildDockerfilePath": null,
+      "prevDockerHost": "http://10.8.217.11:4242",
+      "createdBy": {
+        "github": 7440805
+      },
+      "infraCodeVersion": "58c21012426198160010344c",
+      "_id": "58c86e1119a9081300126632"
+    },
+    "createdBy": {
+      "github": 6379413,
+      "gravatar": "https://avatars.githubusercontent.com/u/6379413?v=3",
+      "username": "Nathan219"
+    },
+    "lowerName": "angular-tests",
+    "shortHash": "eox78d",
+    "__v": 1,
+    "elasticHostname": "angular-tests-staging-codenow.runnableapp.com",
+    "hostname": "angular-tests-staging-codenow.runnableapp.com",
+    "network": {
+      "hostIp": "10.21.104.25"
+    },
+    "container": {
+      "dockerContainer": "54ca71cb1b1eb37daee05e8dc034af6cdb028f577634494fad74f68c83993a25",
+      "dockerHost": "http://10.8.195.90:4242",
+      "inspect": {
+        "Id": "54ca71cb1b1eb37daee05e8dc034af6cdb028f577634494fad74f68c83993a25",
+        "Created": "2017-03-14T22:28:22.577968556Z",
+        "State": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2017-03-14T22:28:23.51183035Z",
+          "FinishedAt": "2017-03-14T22:30:04.960876778Z"
+        },
+        "Image": "sha256:bdd90381dc54eddcd9238f20fb327216a773f94a874445510df8a273c0eeac62",
+        "Name": "/berserk_hopper",
+        "HostConfig": {
+          "Memory": 4096000000,
+          "MemoryReservation": 128000000
+        },
+        "Mounts": [],
+        "Config": {
+          "Hostname": "54ca71cb1b1e",
+          "Env": [
+            "RUNNABLE_CONTAINER_ID=eox78d",
+            "RUNNABLE_CONTAINER_URL=angular-tests-staging-codenow.runnableapp.com",
+            "***SANITIZED***",
+            "***SANITIZED***",
+            "***SANITIZED***",
+            "***SANITIZED***",
+            "***SANITIZED***",
+            "***SANITIZED***"
+          ],
+          "Image": "localhost/2335750/58950f7f9dd12517008e7d18:58c86e1119a9081300126632",
+          "Labels": {
+            "com-docker-swarm-constraints": "[\"org==2335750\",\"node==~ip-10-8-195-90.2335750\"]",
+            "com-docker-swarm-id": "45d3cf46934809fe87905b79368e9f45924bd522b3e7112773ab1e5f509fc0d2",
+            "contextVersionId": "58c86e1119a9081300126632",
+            "githubOrgId": "2335750",
+            "instanceId": "58950fb4bf4f611600a0373f",
+            "instanceName": "angular-tests",
+            "instanceShortHash": "eox78d",
+            "ownerUsername": "CodeNow",
+            "sessionUserGithubId": "6379413",
+            "tid": "3316323c-af6a-4a2f-aeba-d4ad8c8c4eda",
+            "type": "user-container"
+          }
+        },
+        "NetworkSettings": {
+          "Ports": null,
+          "IPAddress": ""
+        }
+      },
+      "ports": {
+        "3000/tcp": [
+          {
+            "HostIp": "0.0.0.0",
+            "HostPort": "64622"
+          }
+        ]
+      }
+    },
+    "dependencies": [
+      {
+        "name": "api",
+        "instanceId": "589508eca7cffb1600da8e15",
+        "elasticHostname": "api-staging-codenow.runnableapp.com",
+        "_id": "5895124240847916007bb70b",
+        "id": "5895124240847916007bb70b"
+      }
+    ],
+    "autoForked": false,
+    "masterPod": true,
+    "disableAutoDeletion": false,
+    "hasAddedBranches": true,
+    "env": [
+      "API_URL=api-staging-codenow.runnableapp.com",
+      "USER_CONTENT_DOMAIN=runnableapp.com"
+    ],
+    "created": "2017-02-03T23:18:12.301Z",
+    "shouldNotAutofork": false,
+    "locked": false,
+    "public": false,
+    "contextVersions": [
+      {
+        "id": "58c86e1119a9081300126632",
+        "isBuildSuccessful": true,
+        "created": "2017-03-14T22:26:25.612Z",
+        "dockRemoved": false,
+        "appCodeVersions": [
+          {
+            "transformRules": {
+              "exclude": [],
+              "replace": [],
+              "rename": []
+            },
+            "useLatest": false,
+            "commit": "b29666337b50119be97d8ba26f53406ba67a38a6",
+            "lowerBranch": "master",
+            "branch": "master",
+            "lowerRepo": "codenow/runnable-angular",
+            "repo": "CodeNow/runnable-angular",
+            "_id": "58950f82db280516004b4b96",
+            "privateKey": "CodeNow/runnable-angular.key",
+            "publicKey": "CodeNow/runnable-angular.key.pub",
+            "defaultBranch": "master"
+          }
+        ],
+        "advanced": true,
+        "build": {
+          "duration": 116294,
+          "_id": "58c86e1119a9081300126631",
+          "triggeredAction": {
+            "appCodeVersion": {
+              "commitLog": [
+                {
+                  "modified": [
+                    "client/templates/instances/viewInstancesList.jade"
+                  ],
+                  "removed": [],
+                  "added": [],
+                  "committer": {
+                    "username": "taylordolan",
+                    "email": "taylordolan@me.com",
+                    "name": "Taylor Dolan"
+                  },
+                  "author": {
+                    "username": "taylordolan",
+                    "email": "taylordolan@me.com",
+                    "name": "Taylor Dolan"
+                  },
+                  "url": "https://github.com/CodeNow/runnable-angular/commit/b29666337b50119be97d8ba26f53406ba67a38a6",
+                  "timestamp": "2017-03-14T15:26:16-07:00",
+                  "message": "fix margin below service CTA",
+                  "distinct": true,
+                  "tree_id": "c6de648badc7231113ddc3db3827a61ebfd95095",
+                  "id": "b29666337b50119be97d8ba26f53406ba67a38a6"
+                }
+              ],
+              "repo": "CodeNow/runnable-angular",
+              "branch": "master",
+              "commit": "b29666337b50119be97d8ba26f53406ba67a38a6"
+            },
+            "manual": false
+          },
+          "failed": false,
+          "completed": "2017-03-14T22:28:22.147Z",
+          "containerStarted": "2017-03-14T22:26:28.675Z",
+          "dockerTag": "localhost/2335750/58950f7f9dd12517008e7d18:58c86e1119a9081300126632",
+          "dockerContainer": "d93776c7007b8f62d0ab519e3f15941640bceb74e32885181cabab03a1d27a2a",
+          "hash": "ce81c54e573d086f43d1eb53e500c7cc",
+          "started": "2017-03-14T22:26:25.853Z",
+          "triggeredBy": {
+            "github": 7440805
+          },
+          "message": "autodeploy"
+        },
+        "dockerHost": "http://10.8.195.90:4242",
+        "state": "build_succeeded",
+        "__v": 0,
+        "owner": {
+          "github": 2335750
+        },
+        "context": "58950f7f9dd12517008e7d18",
+        "buildDockerfilePath": null,
+        "prevDockerHost": "http://10.8.217.11:4242",
+        "createdBy": {
+          "github": 7440805
+        },
+        "infraCodeVersion": "58c21012426198160010344c",
+        "_id": "58c86e1119a9081300126632"
+      }
+    ],
+    "containers": [
+      {
+        "dockerContainer": "54ca71cb1b1eb37daee05e8dc034af6cdb028f577634494fad74f68c83993a25",
+        "dockerHost": "http://10.8.195.90:4242",
+        "inspect": {
+          "Id": "54ca71cb1b1eb37daee05e8dc034af6cdb028f577634494fad74f68c83993a25",
+          "Created": "2017-03-14T22:28:22.577968556Z",
+          "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2017-03-14T22:28:23.51183035Z",
+            "FinishedAt": "2017-03-14T22:30:04.960876778Z"
+          },
+          "Image": "sha256:bdd90381dc54eddcd9238f20fb327216a773f94a874445510df8a273c0eeac62",
+          "Name": "/berserk_hopper",
+          "HostConfig": {
+            "Memory": 4096000000,
+            "MemoryReservation": 128000000
+          },
+          "Mounts": [],
+          "Config": {
+            "Hostname": "54ca71cb1b1e",
+            "Env": [
+              "RUNNABLE_CONTAINER_ID=eox78d",
+              "RUNNABLE_CONTAINER_URL=angular-tests-staging-codenow.runnableapp.com",
+              "***SANITIZED***",
+              "***SANITIZED***",
+              "***SANITIZED***",
+              "***SANITIZED***",
+              "***SANITIZED***",
+              "***SANITIZED***"
+            ],
+            "Image": "localhost/2335750/58950f7f9dd12517008e7d18:58c86e1119a9081300126632",
+            "Labels": {
+              "com-docker-swarm-constraints": "[\"org==2335750\",\"node==~ip-10-8-195-90.2335750\"]",
+              "com-docker-swarm-id": "45d3cf46934809fe87905b79368e9f45924bd522b3e7112773ab1e5f509fc0d2",
+              "contextVersionId": "58c86e1119a9081300126632",
+              "githubOrgId": "2335750",
+              "instanceId": "58950fb4bf4f611600a0373f",
+              "instanceName": "angular-tests",
+              "instanceShortHash": "eox78d",
+              "ownerUsername": "CodeNow",
+              "sessionUserGithubId": "6379413",
+              "tid": "3316323c-af6a-4a2f-aeba-d4ad8c8c4eda",
+              "type": "user-container"
+            }
+          },
+          "NetworkSettings": {
+            "Ports": null,
+            "IPAddress": ""
+          }
+        },
+        "ports": {
+          "3000/tcp": [
+            {
+              "HostIp": "0.0.0.0",
+              "HostPort": "64622"
+            }
+          ]
+        }
+      }
+    ],
+    "id": "58950fb4bf4f611600a0373f"
+  }
+}
