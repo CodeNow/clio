@@ -7,7 +7,9 @@ const mongo = require('./lib/mongo')
 const workerServer = require('./lib/worker')
 
 return mongo.connect()
-  .then(workerServer.start)
+  .then((() => {
+    return workerServer.start()
+  }))
   .then(() => {
     log.info('all components started')
   })
