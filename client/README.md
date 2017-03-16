@@ -1,7 +1,7 @@
 # Clio Client
 
 ### Configuration
-Clio client depends on an environment variable `CLIO_HTTP_URL` which should be set to the root of clio's http server, ex: `http://clio.runnable-gamma.com:8001/`
+Clio client depends on an environment variable `CLIO_HTTP_URL` which should be set to the root of clio's http server, ex: `http://clio.runnable-gamma.com:8008/`
 
 ### Usage
 ```javascript
