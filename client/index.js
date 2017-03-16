@@ -6,6 +6,6 @@ request.defaults({
 
 module.exports = {
   fetchInstanceHistory: (instanceId) => {
-    return request.get(`instance/${instanceId}/history`)
+    return request.get(`instances/${instanceId}/history`)
   }
 }
