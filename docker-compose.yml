@@ -13,6 +13,8 @@ services:
       - RABBITMQ_PASSWORD=guest
       - RABBITMQ_HOSTNAME=rabbit
       - MONGO=mongodb://mongo:27017/runnable_test
+    ports:
+      - "8008:8008"
 
   rabbit:
     image: rabbitmq:3.4.3-management
