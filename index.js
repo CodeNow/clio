@@ -2,13 +2,18 @@
 
 require('dotenv').config({ path: './config/.env' })
 
+const httpServer = require('./lib/http')
 const log = require('./lib/logger').child({ module: 'main' })
 const mongo = require('./lib/mongo')
+const Promise = require('bluebird')
 const workerServer = require('./lib/worker')
 
 return mongo.connect()
   .then((() => {
-    return workerServer.start()
+    return Promise.join(
+      httpServer.start(),
+      workerServer.start()
+    )
   }))
   .then(() => {
     log.info('all components started')

@@ -6,4 +6,6 @@ WORKDIR /app
 RUN npm install
 ADD . /app
 
+EXPOSE 8001
+
 CMD npm start
