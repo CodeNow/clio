@@ -6,6 +6,6 @@ WORKDIR /app
 RUN npm install
 ADD . /app
 
-EXPOSE 8001
+EXPOSE Changed default port to 8008
 
 CMD npm start
