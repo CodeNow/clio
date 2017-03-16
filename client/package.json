@@ -1,6 +1,6 @@
 {
   "name": "@runnable/clio-client",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Clio client",
   "main": "index.js",
   "scripts": {
