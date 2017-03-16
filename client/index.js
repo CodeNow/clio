@@ -8,7 +8,7 @@ const defaultOptions = {
 module.exports = {
   fetchInstanceHistory: (instanceId) => {
     return request.get(`${baseUrl}instances/${instanceId}/history`, defaultOptions)
-  }
+  },
   fetchContainerInstance: (containerId) => {
     return request.get(`${baseUrl}containers/${containerId}/instance`, defaultOptions)
   }
