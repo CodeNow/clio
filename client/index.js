@@ -6,5 +6,10 @@ module.exports = {
     return request.get(`${baseUrl}instances/${instanceId}/history`, {
       json: true
     })
+  },
+  fetchContainerInstance: (containerId) => {
+    return request.get(`${baseUrl}containers/${containerId}/instance`, {
+      json: true
+    })
   }
 }
